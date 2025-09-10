@@ -1,0 +1,12 @@
+upload/
+tourism/
+logs/
+old_root/
+db/
+cgi-bin/
+notused/
+
+.well-known/
+
+error-log
+debug.txt

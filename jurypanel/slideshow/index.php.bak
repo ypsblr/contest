@@ -1,0 +1,95 @@
+<?php 
+session_start();
+//include("../op/connect.php");
+function encode_string_array ($stringArray) {
+    $s = strtr(base64_encode(addslashes(gzcompress(serialize($stringArray),2))), '+/=', '_,');
+    
+    return $s;
+}	
+	function decode_string_array ($stringArray) {
+    $s = unserialize(gzuncompress(stripslashes(base64_decode(strtr($stringArray, '_,', '+/=')))));
+    return $s;
+}
+function orderSuffix($i) {
+						   $str = "$i";
+						   $t = $i > 9 ? substr($str,-2,1) : 0;
+						   $u = substr($str,-1);
+						   if ($t==1) return $str . 'th';
+							   else switch ($u) {
+							       case 1: return $str . '<sup>st</sup>';
+							       case 2: return $str . '<sup>nd</sup>';
+							       case 3: return $str . '<sup>rd</sup>';
+							       default: return $str . '<sup>th</sup>';
+								   }
+							}
+
+// isset($_SESSION['jury_id'])&& $_SESSION['jury_type']=="Master";
+$t=1;
+if ($t==1) 
+{
+	/*
+$session_id=$_SESSION['jury_id'];
+$user_query = mysql_query("select * from users where id = '$session_id'")or die(mysql_error());
+$user_row = mysql_fetch_array($user_query);
+$jury_username = $user_row['username'];
+$jury_name=$user_row['fname'];
+$jury_pic=$user_row['pic'];
+$user_type = $user_row['type'];
+*/
+	
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Youth Photography</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ultra">
+<link rel="stylesheet" type="text/css" href="js/vegas/jquery.vegas.css">
+<link rel="stylesheet" type="text/css" href="js/jscrollpane/jquery.jscrollpane.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/vegas/jquery.vegas.js"></script>
+<script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script src="js/buzz/buzz.js"></script>
+<script src="js/gallery.js"></script>
+<script>
+$(document).ready(function() {
+    $('video, audio').prop('muted', true);
+});
+</script>
+</head>
+
+<body>
+    <div id="flash"></div>
+    <div id="title">
+        <h1>Rating Preview</h1>
+        <p>Picture by <a href="#">Youth Photography</a></p>
+    </div>
+    <div id="thumbnails">
+        <ul>
+
+		<?php
+		$rating = mysql_query("select * from rating ORDER BY id LIMIT 14")or die(mysql_error());
+        $tr_rating = mysql_fetch_array($rating);
+        ?>
+            <li><a href="img/01.jpg"><img src="img/01b.jpg" title="Deepak -TITLE" data-valign="top"></a></li>
+        <?php
+         }
+		?>
+        </ul>
+    	<div id="pointer"></div>
+    </div>
+    <div id="pause"><a href="#">Paused</a></div>
+ 
+</body>
+</html>
+<?php
+}
+else
+{
+header("Location: ".$_SERVER['HTTP_REFERER']);
+printf("<script>location.href='".$_SERVER['HTTP_REFERER']."'</script>");
+}
+
+?>

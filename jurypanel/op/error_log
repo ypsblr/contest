@@ -1,0 +1,14 @@
+[26-Jul-2018 06:21:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ypsadmin/public_html/contest/jurypanel/op/connect.php on line 2
+[26-Jul-2018 06:21:07 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ypsadmin/public_html/contest/jurypanel/op/connect.php on line 2
+[15-Apr-2019 10:01:11 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ypsadmin/public_html/contest/jurypanel/op/connect.php on line 2
+[23-Apr-2019 10:11:53 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ypsadmin/public_html/contest/jurypanel/op/connect.php on line 2
+[20-Sep-2019 20:41:30 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ypsadmin/public_html/contest/jurypanel/op/connect.php on line 2
+[20-Sep-2019 20:42:34 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ypsadmin/public_html/contest/jurypanel/op/connect.php on line 2
+[25-Sep-2019 19:51:00 UTC] PHP Notice:  Undefined variable: DBCON in /home/ypsadmin/public_html/contest/jurypanel/op/email_result.php on line 8
+[25-Sep-2019 19:51:00 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ypsadmin/public_html/contest/jurypanel/op/email_result.php on line 8
+[25-Sep-2019 19:51:00 UTC] PHP Notice:  Undefined variable: DBCON in /home/ypsadmin/public_html/contest/jurypanel/op/email_result.php on line 8
+[25-Sep-2019 19:51:00 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/ypsadmin/public_html/contest/jurypanel/op/email_result.php on line 8
+[25-Sep-2019 19:54:53 UTC] PHP Notice:  Undefined variable: DBCON in /home/ypsadmin/public_html/contest/jurypanel/op/email_result.php on line 8
+[25-Sep-2019 19:54:53 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/ypsadmin/public_html/contest/jurypanel/op/email_result.php on line 8
+[25-Sep-2019 19:54:53 UTC] PHP Notice:  Undefined variable: DBCON in /home/ypsadmin/public_html/contest/jurypanel/op/email_result.php on line 8
+[25-Sep-2019 19:54:53 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/ypsadmin/public_html/contest/jurypanel/op/email_result.php on line 8

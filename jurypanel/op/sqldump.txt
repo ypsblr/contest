@@ -1,0 +1,4 @@
+SQL operation failed with message 'Unknown column 'gender' in 'field list'' in line 49 of '/home/ypsadmin/public_html/contest/jurypanel/op/delete_recommendation.php'
+SQL: SELECT pic.pic_id AS pic_id, title, picfile, section, ranking, gender FROM pic, recommendation WHERE recommendation.award_id = '3'   AND recommendation.jury_id = '35'   AND recommendation.pic_id = pic.pic_id   AND pic.section = 'Performing Arts'   AND pic.entry_id = entry.entry_id ORDER BY ranking 
+SQL operation failed with message 'Unknown column 'gender' in 'field list'' in line 49 of '/home/ypsadmin/public_html/contest/jurypanel/op/delete_recommendation.php'
+SQL: SELECT pic.pic_id AS pic_id, title, picfile, section, ranking, gender FROM pic, recommendation WHERE recommendation.award_id = '3'   AND recommendation.jury_id = '35'   AND recommendation.pic_id = pic.pic_id   AND pic.section = 'Performing Arts'   AND pic.entry_id = entry.entry_id ORDER BY ranking 

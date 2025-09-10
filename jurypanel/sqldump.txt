@@ -1,0 +1,6 @@
+SQL operation failed with message 'Duplicate entry '202508-8-0' for key 'PRIMARY'' in line 128 of '/home/ypsadmin/public_html/mahe/jurypanel/results.php'
+SQL: INSERT INTO ar_winner (month, award_id, slno, name, honors, phone, email, title, location, picfile)    SELECT '202508', award_id, ranking, name, honors, phone, email, title, location, picfile    FROM result, pic, entry    WHERE result.pic_id = pic.pic_id      AND pic.entry_id = entry.entry_id 
+SQL operation failed with message 'Duplicate entry '202508-8-0' for key 'PRIMARY'' in line 128 of '/home/ypsadmin/public_html/mahe/jurypanel/results.php'
+SQL: INSERT INTO ar_winner (month, award_id, slno, name, honors, phone, email, title, location, picfile)    SELECT '202508', award_id, ranking, name, honors, phone, email, title, location, picfile    FROM result, pic, entry    WHERE result.pic_id = pic.pic_id      AND pic.entry_id = entry.entry_id 
+SQL operation failed with message 'Duplicate entry '202508-3' for key 'PRIMARY'' in line 120 of '/home/ypsadmin/public_html/mahe/jurypanel/results.php'
+SQL: INSERT INTO ar_jury (month, seq, name, picture, avatar, title, honors, profile)    SELECT '202508', jurynumber, name, picture, avatar, title, honors, profile    FROM assignment, user    WHERE assignment.user_id = user.user_id 

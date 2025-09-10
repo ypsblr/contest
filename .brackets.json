@@ -1,0 +1,24 @@
+{
+	"autoHideSearch": false,
+    "brackets-eslint.gutterMarks": true,
+    "brackets-eslint.useLocalESLint": false,
+    "fonts.fontSize": "12px",
+    "fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
+    "styleActiveLine": true,
+    "wordWrap": false,
+    "linting.collapsed": false,
+    "brackets-indent-guides.enabled": true,
+    "useTabChar": true,
+    "brackets-file-tree-exclude.excludeList": [
+        "/.git/",
+		"/assets/",
+		"/font/",
+		"/fonts/",
+        "/notused/",
+        "/upload/",
+        "/img/",
+		"/scss/",
+        "/slideshow/",
+		"/wampthemes"
+    ]
+}

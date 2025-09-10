@@ -1,0 +1,2 @@
+# set PHP Log file
+php_value error_log /home/ypsadmin/public_html/contest/logs/error_log
